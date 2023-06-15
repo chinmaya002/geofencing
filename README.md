@@ -1,1 +1,3 @@
 # geofencing
+
+Geofencing is creating a virtual boundary around any particular location and findinf out whether your system has entered the virtual geofence. This model was built using ESP8266 and SIM28 GPS module.The ESP8266 is a low-cost, Wi-Fi-enabled microcontroller chip that gained significant popularity in the world of Internet of Things (IoT) and embedded systems.SIM28 is primarily focused on GPS (Global Positioning System) functionality. It integrates a GPS receiver that can receive signals from multiple satellites to determine the device's precise location coordinates (latitude and longitude), altitude, speed, and time information. ESP8266 and sim28 follow I2C communication. The data whether the system has entered the fence can be displayed on 2004A LCD display.
