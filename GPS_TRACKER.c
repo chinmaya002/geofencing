@@ -1,5 +1,4 @@
-//----------------------------------------Include the NodeMCU ESP8266 Library
-//----------------------------------------see here: https://www.youtube.com/watch?v=8jMr94B8iN0 to add NodeMCU ESP12E ESP8266 library and board (ESP8266 Core SDK)
+
 #include <ESP8266WiFi.h>
 #include <WiFiClientSecure.h>
 //----------------------------------------
@@ -195,11 +194,11 @@ void sendData(float tem, float hum, String sta ) {
   //----------------------------------------
 
   //----------------------------------------Processing data and sending data
-  String string_temperature =  String(tem,DEC);
-  // String string_temperature =  String(tem, DEC); 
-  String string_humidity =  String(hum, DEC); 
+  String lat =  String(tem,DEC);
+  
+  String lon =  String(hum, DEC); 
   String string_status=sta;
-  String url = "/macros/s/" + GAS_ID + "/exec?temperature=" + string_temperature + "&humidity=" + string_humidity + "&status=" + string_status;
+  String url = "/macros/s/" + GAS_ID + "/exec?temperature=" + lat + "&humidity=" + lon + "&status=" + string_status;
   Serial.print("requesting URL: ");
   Serial.println(url);
 
